@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql
+    command: --secure-file-priv="" # Disables the secure-file-priv restriction
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+      - ./data:/var/lib/mysql-files
