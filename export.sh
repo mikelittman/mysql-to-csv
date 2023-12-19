@@ -66,4 +66,4 @@ done
 # Clean-up: Stop the MySQL service
 # docker-compose down
 
-echo "CSV files have been created and zipped in the $OUTPUT_DIR directory."
+echo "CSV files have been created in the $OUTPUT_DIR directory."
